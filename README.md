@@ -6,7 +6,7 @@ Slot Booking Backend.
 Return all the free slots available for a given date converted to whatever timezone we pass.
 For reference also added ```bookedSlotMod``` which provide different time details of booked slots. 
 ```
-Api : http://localhost:3001/v1/freeSlots
+Post : http://localhost:3001/v1/freeSlots
 
 Body:
 {
@@ -76,7 +76,7 @@ Whatever data is passed it will create the event and store that into the firesto
 if the event already exists for that time it returns status code 422 or else just store it and return with status 200.
 
 ```
-Api : http://localhost:3001/v1/bookSlot
+Post : http://localhost:3001/v1/bookSlot
 
 Body: 
 {
@@ -111,7 +111,7 @@ Response 200:
 Returns all the events between given StartDate & EndDate. All events returned as in UTC timezone.
 
 ```
-Api: http://localhost:3001/v1/getEvents
+Post: http://localhost:3001/v1/getEvents
 
 Body: 
 {
