@@ -1,5 +1,6 @@
 # slot-booking
 Slot Booking Assignment 
+Config file allows to change startHour, endHour, duration and timezone. 
 
 ## 1.Free Slots
 Return all the free slots available for a given date converted to whatever timezone we pass.
