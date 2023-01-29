@@ -1,0 +1,26 @@
+{
+  "name": "ghl",
+  "version": "1.0.0",
+  "description": "slot booking",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "shivam tiwari",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-joi-validation": "^5.0.1",
+    "firebase-admin": "^11.5.0",
+    "http": "^0.0.1-security",
+    "joi": "^17.7.0",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.40",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7",
+    "validator": "^13.7.0"
+  }
+}
