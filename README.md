@@ -1,5 +1,5 @@
 # slot-booking
-Slot Booking Assignment 
+Slot Booking Backend.
 Config file allows to change startHour, endHour, duration and timezone. 
 
 ## 1.Free Slots
