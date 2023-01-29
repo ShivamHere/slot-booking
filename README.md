@@ -1,8 +1,8 @@
 # slot-booking
 Slot Booking Backend.
-Config file allows to change startHour, endHour, duration and timezone. 
 
-## 1.Free Slots
+## API Endpoints
+### 1.Free Slots
 Return all the free slots available for a given date converted to whatever timezone we pass.
 For reference also added ```bookedSlotMod``` which provide different time details of booked slots. 
 ```
@@ -71,7 +71,7 @@ Response:
 }
 ```
 
-## 2.Create Event
+### 2.Create Event
 Whatever data is passed it will create the event and store that into the firestore document, 
 if the event already exists for that time it returns status code 422 or else just store it and return with status 200.
 
@@ -107,7 +107,7 @@ Response 200:
 }
 ```
 
-## 3.Get Event
+### 3.Get Event
 Returns all the events between given StartDate & EndDate. All events returned as in UTC timezone.
 
 ```
@@ -155,3 +155,16 @@ Response:
     "Token": ""
 }
 ```
+
+## Setup
+1. Clone the repo. 
+2. Install all required packages using ```npm i```.
+3. Project requires ```key.json``` file, for connecting to firestore, credentials can be found from **IAM & Admin -> Service Accounts -> Gets Keys**
+4. In Firestore, keep collection name as ```book_events```.
+5. Config file allows to change startHour, endHour, duration and timezone.
+
+## Database and Queries
+1. Database used is **Firestore** as instructed in PDF. 
+2. Only two queries have been used here:
+   * First, is for getting booking slots, using ```get()``` and ```where``` conditions on dates.
+   * Second, is for creating document for new slot, using ```create```.
